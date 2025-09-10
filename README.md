@@ -66,7 +66,7 @@ For questions or collaboration: support@theevolved.net
 
 
 ## OSF Registrations
-- Study 1 — Reliability & Validity: REPLACE_STUDY1_URL
-- Study 2 — 14-day Micro-cycle: REPLACE_STUDY2_URL
+- Study 1 — Reliability & Validity: https://osf.io/7tzs6/
+- Study 2 — 14-day Micro-cycle: https://osf.io/sb8ae/
 
 > Replace the two placeholders above with your OSF preregistration links once created.
