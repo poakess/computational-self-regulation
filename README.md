@@ -1,4 +1,5 @@
 # CSR Flag Pack v0.1 — “Plant the Flag” in a Day
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17095406.svg)](https://doi.org/10.5281/zenodo.17095406)
 This bundle contains everything you need to stake the field of **Computational Self‑Regulation (CSR)** and the industry category **Self‑Mastery Operating Systems (SMOS)**.
 
 ## Contents

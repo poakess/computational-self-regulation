@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: Computational Self-Regulation (CSR) Flag Pack
+authors:
+  - family-names: Oakes
+    given-names: Presley Jason
+date-released: 2025-09-10
+doi: 10.5281/zenodo.17095406
+url: https://poakess.github.io/computational-self-regulation/
+license: MIT
+version: v0.1.0
+message: "If you use this work, please cite it using the metadata in this file."
