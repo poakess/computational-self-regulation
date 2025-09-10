@@ -39,3 +39,27 @@ For questions or collaboration: support@theevolved.net
 - CSR site (GitHub Pages): https://poakess.github.io/computational-self-regulation/
 - Organization: https://www.theevolved.net
 - Capstone OS (app): https://evo-apt-complete-project.vercel.app/login
+
+## How to cite
+**APA**  
+> Oakes, P. J. (2025). *CSR Flag Pack v0.1 — Field + AIF Spec + Workshop CFP* [Software]. Zenodo. https://doi.org/10.5281/zenodo.17095406
+
+**MLA**  
+> Oakes, Presley Jason. *CSR Flag Pack v0.1 — Field + AIF Spec + Workshop CFP*. 2025. Zenodo, https://doi.org/10.5281/zenodo.17095406.
+
+**Chicago**  
+> Oakes, Presley Jason. 2025. *CSR Flag Pack v0.1 — Field + AIF Spec + Workshop CFP*. Zenodo. https://doi.org/10.5281/zenodo.17095406.
+
+**BibTeX**
+```bibtex
+@software{oakes_2025_csr_flag_pack_v0_1,
+  author    = {Oakes, Presley Jason},
+  title     = {CSR Flag Pack v0.1 — Field + AIF Spec + Workshop CFP},
+  year      = {2025},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.17095406},
+  url       = {https://doi.org/10.5281/zenodo.17095406}
+}
+```
+
+**Quick import:** most managers (Zotero, Mendeley) can import by DOI — paste `10.5281/zenodo.17095406`.
