@@ -63,3 +63,10 @@ For questions or collaboration: support@theevolved.net
 ```
 
 **Quick import:** most managers (Zotero, Mendeley) can import by DOI — paste `10.5281/zenodo.17095406`.
+
+
+## OSF Registrations
+- Study 1 — Reliability & Validity: REPLACE_STUDY1_URL
+- Study 2 — 14-day Micro-cycle: REPLACE_STUDY2_URL
+
+> Replace the two placeholders above with your OSF preregistration links once created.
