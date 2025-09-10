@@ -35,5 +35,5 @@ For questions or collaboration: support@www.theevolved.net
 
 ## Official Links
 - CSR site (GitHub Pages): https://poakess.github.io/computational-self-regulation/
-- Organization: https://www.www.theevolved.net
+- Organization: https://www.theevolved.net
 - Capstone OS (app): https://evo-apt-complete-project.vercel.app/login
