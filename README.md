@@ -25,7 +25,7 @@ This bundle contains everything you need to stake the field of **Computational S
 Authored by **Presley Jason Oakes** (September 10, 2025).
 
 ## Contact
-For questions or collaboration: support@www.theevolved.net
+For questions or collaboration: support@theevolved.net
 
 
 ### Direct links

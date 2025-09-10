@@ -49,4 +49,4 @@ Privacy‑by‑design • Explicit consent • Human‑in‑the‑loop for sensi
 
 
 ---
-**Contact:** support@www.theevolved.net
+**Contact:** support@theevolved.net
