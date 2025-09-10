@@ -1,0 +1,334 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Aptitude Interchange Format (AIF) v0.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "profile",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "0.1"
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "required": [
+        "user_id"
+      ],
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 120
+        },
+        "sex": {
+          "type": "string",
+          "enum": [
+            "female",
+            "male",
+            "intersex",
+            "unspecified"
+          ]
+        },
+        "height_cm": {
+          "type": "number",
+          "minimum": 0
+        },
+        "weight_kg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "activity_level": {
+          "type": "string",
+          "enum": [
+            "low",
+            "moderate",
+            "high"
+          ]
+        },
+        "goals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "domain",
+          "date",
+          "overall_score"
+        ],
+        "properties": {
+          "domain": {
+            "type": "string",
+            "enum": [
+              "cognition",
+              "fitness",
+              "movement",
+              "health",
+              "senses",
+              "social",
+              "emotions"
+            ]
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "overall_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "subscores": {
+            "type": "object"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "ai_summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "daily_context": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "sleep_hours": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 24
+          },
+          "stress_0_10": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10
+          },
+          "readiness_0_10": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "plan_id",
+          "date",
+          "horizon_days",
+          "objectives"
+        ],
+        "properties": {
+          "plan_id": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "horizon_days": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 90
+          },
+          "objectives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "generated_by": {
+            "type": "object",
+            "properties": {
+              "ai_model": {
+                "type": "string"
+              },
+              "policy_version": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "quests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "quest_id",
+          "domain",
+          "title",
+          "scheduled_date"
+        ],
+        "properties": {
+          "quest_id": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string",
+            "enum": [
+              "cognition",
+              "fitness",
+              "movement",
+              "health",
+              "senses",
+              "social",
+              "emotions"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "effort_minutes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 240
+          },
+          "scheduled_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "planned",
+              "completed",
+              "skipped"
+            ]
+          }
+        }
+      }
+    },
+    "completions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "quest_id",
+          "date_completed"
+        ],
+        "properties": {
+          "quest_id": {
+            "type": "string"
+          },
+          "date_completed": {
+            "type": "string",
+            "format": "date"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "domain",
+          "start_date",
+          "end_date"
+        ],
+        "properties": {
+          "domain": {
+            "type": "string",
+            "enum": [
+              "cognition",
+              "fitness",
+              "movement",
+              "health",
+              "senses",
+              "social",
+              "emotions"
+            ]
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "delta_score": {
+            "type": "number",
+            "minimum": -100,
+            "maximum": 100
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "app_version",
+        "schema_version",
+        "models"
+      ],
+      "properties": {
+        "app_version": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "models": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "policy_version": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
