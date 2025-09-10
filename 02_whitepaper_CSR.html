@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Computational Self-Regulation: Field Definition & Reference Implementation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; color: #222; max-width: 860px; margin: 2rem auto; padding: 0 1rem; }
+ h1,h2,h3 { line-height: 1.2; }
+ h1 { font-size: 2rem; margin-top: 1.5rem; }
+ h2 { margin-top: 1.25rem; }
+ code, pre { background: #f5f5f7; padding: .2rem .35rem; border-radius: 6px; }
+ .byline { color: #555; }
+ .callout { background: #f2fbf7; border-left: 4px solid #19a974; padding: .75rem 1rem; border-radius: 8px; }
+ .small { color:#666; font-size:.9rem; }
+ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
+ ul { margin-left: 1rem; }
+</style>
+</head>
+<body>
+<h1>Computational Self-Regulation: A Field Definition and a Reference Implementation</h1>
+<p class="byline"><strong>Presley Jason Oakes</strong> — <a href="mailto:support@theevolved.net">support@theevolved.net</a> — September 10, 2025</p>
+<p class="small">Academic field: <strong>Computational Self‑Regulation (CSR)</strong> • Industry category: <strong>Self‑Mastery Operating Systems (SMOS)</strong> • Reference app: <strong>Evo‑Apt</strong></p>
+
+<h2>Abstract</h2>
+<p>We define <em>Computational Self‑Regulation</em> (CSR) as the study and engineering of closed‑loop systems that measure, plan, act, and adapt across human ability domains to improve individual outcomes. We present a general architecture, a unified ontology with interpretable 1–100 anchors, a policy‑driven action layer, and a behavior‑shaping visualization (the “Mastery Map”). We argue that contemporary LLMs and modern cloud primitives make CSR feasible at consumer scale. We outline initial research tasks and propose an open <em>Aptitude Interchange Format</em> (AIF) to standardize data exchange.</p>
+
+<h2>1. Introduction</h2>
+<p>Most consumer “self‑improvement” tools stop at data collection, generic advice, or habit tracking. CSR integrates these components into a single feedback loop: <strong>assess → summarize → plan → act → log → adapt → visualize</strong>. The reference implementation, Evo‑Apt, demonstrates the loop across seven domains: Cognition, Fitness, Movement, Health, Senses, Social, and Emotions.</p>
+
+<h2>2. Related Work</h2>
+<ul>
+<li>Psychometrics (Spearman, Cattell, Big Five) — rigorous measurement, limited cross‑domain synthesis.</li>
+<li>CBT & behavioral medicine — structured interventions with clinical scope.</li>
+<li>Deliberate practice & periodization — micro‑cycles to move capabilities.</li>
+<li>Quantified Self & wearables — abundant signals, weak plan integration.</li>
+<li>HCI & behavior change — interfaces that scaffold action.</li>
+<li>Modern LLMs — plan synthesis from structured profiles and context.</li>
+</ul>
+
+<h2>3. CSR Architecture</h2>
+<div class="callout"><strong>Objects:</strong> Profile • Assessments (1–100 anchors) • Daily Context • Plans • Quests/Goals • Completions • Outcomes • Provenance.</div>
+<p>The CSR loop composes a measurement layer (interpretable scores), a reasoning layer (AI Advisor + policy engine), an action layer (quests/goals/tools), and a visualization layer (Mastery Map). Provenance records models and policy versions for auditability.</p>
+
+<h2>4. Ontology & Scales</h2>
+<p>Each domain has subscales with descriptive anchors for 0–100 (in 5‑point steps). Anchors enable self‑assessment and make AI plans interpretable. Example (Cognition): Attention, Memory, Language, Perception, Problem‑Solving, Decision‑Making, Creativity.</p>
+
+<h2>5. Planning: AI Advisor + Policy</h2>
+<p>The Advisor merges profile, assessments, history, and context to propose goals and micro‑cycles. A simple policy prioritizes <em>weakest‑domain</em> work tempered by <em>recovery state</em> (e.g., sleep, stress). This yields 2–3 high‑leverage quests per day.</p>
+
+<h2>6. Action: Quests, Goals, Tools</h2>
+<p>Quests are concrete behaviors (effort‑bounded). Goals aggregate completions over rolling windows (e.g., 7 days). Tools (drills, workouts, finance tasks) operationalize the plan.</p>
+
+<h2>7. Visualization: Mastery Map</h2>
+<p>A radar/terrain hybrid maps capabilities into a spatial metaphor (“the mountain”). Progress is visible and motivating; users can “see” themselves climbing.</p>
+
+<h2>8. Ethics, Privacy, & Safety</h2>
+<ul>
+<li>Consent for data use and research.</li>
+<li>Privacy by default; export/delete controls.</li>
+<li>Explainable plans; human‑in‑the‑loop for sensitive domains.</li>
+<li>Guardrails and safe failure modes.</li>
+</ul>
+
+<h2>9. Research Program</h2>
+<ul>
+<li>Reliability: internal consistency and test–retest.</li>
+<li>Validity: convergent validity with existing scales.</li>
+<li>Intervention pilots: 7–14 day micro‑cycles; effect sizes and adherence.</li>
+<li>Visualization efficacy: does the Mastery Map change behavior?</li>
+</ul>
+
+<h2>10. Aptitude Interchange Format (AIF) Summary</h2>
+<p>AIF is a JSON schema for CSR data: profiles, assessments, context, plans, quests, completions, outcomes, and provenance. See <code>spec/aif-schema-v0.1.json</code>.</p>
+
+<h2>11. Reference Implementation</h2>
+<p><em>Evo‑Apt</em> integrates the CSR loop end‑to‑end. Key innovations: unified anchors, policy‑driven quests, and a motivating spatial visualization.</p>
+
+<h2>12. Conclusion</h2>
+<p>CSR formalizes closed‑loop personal improvement. With a common ontology and spec, researchers and builders can collaborate on benchmarks, datasets, and safer, more effective systems.</p>
+
+<hr>
+<p class="small">Cite as: Oakes, P. J. (2025). <em>Computational Self‑Regulation: A Field Definition and a Reference Implementation</em>. DOI to be minted (Zenodo/OSF). </p>
+</body>
+</html>
