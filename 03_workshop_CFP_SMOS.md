@@ -1,3 +1,8 @@
+## Submit
+- **Submission form:** REPLACE_CFP_FORM_URL
+- **Deadline:** REPLACE_DEADLINE (e.g., 2025-10-15 AoE)
+- **Contact:** support@theevolved.net
+
 # Workshop CFP: Self‑Mastery Operating Systems (SMOS) — A CSR Workshop
 **Target venues:** CHI / UbiComp / MLHC / NeurIPS (workshop track)  
 **Proposed date:** September 10, 2025

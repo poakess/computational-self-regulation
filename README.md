@@ -70,3 +70,8 @@ For questions or collaboration: support@theevolved.net
 - Study 2 — 14-day Micro-cycle: https://osf.io/sb8ae/
 
 > Replace the two placeholders above with your OSF preregistration links once created.
+
+
+## Submissions
+- **Workshop form:** REPLACE_CFP_FORM_URL
+- Questions: support@theevolved.net
