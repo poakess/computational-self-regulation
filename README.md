@@ -18,11 +18,22 @@ This bundle contains everything you need to stake the field of **Computational S
 4) **OSF**: open an OSF project, paste the prereg templates, and register.
 5) **CFP**: post the workshop CFP as a GitHub issue + a simple form (Google Forms) — share on Twitter/LinkedIn.  
 6) **Announce**: share the DOI, site, and whitepaper link with the tagline:  
-   > “Founding a new field: Computational Self‑Regulation (CSR). A spec (AIF), a workshop, and a reference app: Evo‑Apt.”
+   > “Founding a new field: Computational Self‑Regulation (CSR). A spec (AIF), a workshop, and a reference app: Capstone OS.”
 7) **Trademark (optional)**: file an intent‑to‑use for “Self‑Mastery Operating System” (software/services) with counsel.
 
 ## Credits
 Authored by **Presley Jason Oakes** (September 10, 2025).
 
 ## Contact
-For questions or collaboration: support@theevolved.net
+For questions or collaboration: support@www.theevolved.net
+
+
+### Direct links
+- AIF schema in repo: `spec/aif-schema-v0.1.json`
+- Raw AIF JSON: https://raw.githubusercontent.com/poakess/computational-self-regulation/main/spec/aif-schema-v0.1.json
+
+
+## Official Links
+- CSR site (GitHub Pages): https://poakess.github.io/computational-self-regulation/
+- Organization: https://www.www.theevolved.net
+- Capstone OS (app): https://evo-apt-complete-project.vercel.app/login

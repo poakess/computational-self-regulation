@@ -30,4 +30,4 @@ This workshop convenes researchers and builders working on **Computational Selfâ
 - TBD (Privacy/Ethics)
 
 ## Contact
-support@theevolved.net
+support@www.theevolved.net

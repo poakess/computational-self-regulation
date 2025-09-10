@@ -45,8 +45,8 @@ Cognition, Fitness, Movement (Psycho‑motor), Health, Senses, Social, and Emoti
 Privacy‑by‑design • Explicit consent • Human‑in‑the‑loop for sensitive guidance • Transparent model/policy versions • Easy export/delete of data.
 
 ---
-**Reference implementation:** *Evo‑Apt*, a Self‑Mastery Operating System by Presley Oakes.
+**Reference implementation:** *Capstone OS*, a Self‑Mastery Operating System by Presley Oakes.
 
 
 ---
-**Contact:** support@theevolved.net
+**Contact:** support@www.theevolved.net
